@@ -13,11 +13,26 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 
 ## Features
 
-- Subtle CSS animations (hover effects, fade-ins, gradient accents) — all zero JavaScript
-- Fully responsive mobile layout
-- Print-optimized for clean A4 PDF output with page breaks per phase
-- Color-coded phase system with allocation bars
-- SWP income flow diagram (CSS-only)
+- Subtle CSS animations (hover effects, fade-ins, gradient accents, shimmer badges) — zero JavaScript
+- Fully responsive mobile layout with touch-friendly tap targets
+- Dense A4 print optimization — all 4 phases fit cleanly on 4 compact pages
+- Color-coded phase system with animated allocation bars
+- SWP income flow diagram (4-step, CSS-only)
+- Hard rule warning cards with pulsing borders
+- Tax implication notes
+- Master timeline matrix with hover highlights
+- Summary statistics dashboard
+
+## Project Structure
+
+```
+investement-plan/
+├── index.html      # Main page (all 4 phases)
+├── styles.css      # Animations, mobile, print styles
+├── .prettierrc     # Prettier config (120 print width)
+├── .nojekyll       # Disables Jekyll on GitHub Pages
+└── README.md
+```
 
 ## Preview Locally
 
@@ -44,18 +59,34 @@ open index.html
 
 - **HTML5** — semantic structure
 - **Tailwind CSS** (CDN) — utility-first styling
-- **Custom CSS** — animations, print styles, mobile optimizations
+- **Custom CSS** — animations, print compaction, mobile optimizations
+- **Prettier** — consistent code formatting (`printWidth: 120`)
 - **Zero JavaScript** — pure HTML/CSS, GitHub Pages compatible
 
 ## Print to PDF
 
 Open `index.html` in your browser and use **Ctrl+P** / **Cmd+P**. The print stylesheet handles:
 
-- A4 page sizing with proper margins
-- Page breaks between each phase
-- All animations disabled
-- Colors preserved for professional output
-- Cards and tables kept together (no mid-element breaks)
+- **Dense A4 layout** — compact padding (0.625rem), smaller fonts (9.5pt), tight margins (12mm × 10mm)
+- **Page breaks** between each phase for clean separation
+- **All animations disabled** — no hover effects, no gradients, no pulses
+- **Colors preserved** — `print-color-adjust: exact` on all backgrounds and badges
+- **Cards kept together** — `page-break-inside: avoid` prevents mid-card splits
+- **Allocation bars** — slimmer height (18px) with correct proportions
+- **Tables** — compact rows with reduced padding
+- **Phase headers** — smaller badges (22px) and tighter spacing
+
+## Code Formatting
+
+```bash
+# Format all files
+npx prettier --write .
+
+# Check without writing
+npx prettier --check .
+```
+
+Config in `.prettierrc`: `printWidth: 120`, `htmlWhitespaceSensitivity: ignore`.
 
 ## License
 

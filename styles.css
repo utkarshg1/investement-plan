@@ -425,7 +425,7 @@ body {
 }
 
 /* ============================================
-   PRINT STYLES — Clean Professional PDF
+   OPTIMIZED PRINT STYLES — Full A4 Page Fill
    ============================================ */
 @media print {
   * {
@@ -437,26 +437,20 @@ body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     background: #ffffff !important;
-    font-size: 10pt;
-    line-height: 1.4;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #1e293b !important;
   }
 
-  /* Page setup */
   @page {
-    size: A4;
-    margin: 12mm 10mm;
+    size: A4 portrait;
+    margin: 12mm 10mm 12mm 10mm;
   }
 
-  @page :first {
-    margin-top: 8mm;
-  }
-
-  /* Hide screen-only elements */
   .no-print {
     display: none !important;
   }
 
-  /* Container reset */
   .pdf-container {
     max-width: 100% !important;
     margin: 0 !important;
@@ -464,23 +458,185 @@ body {
     box-shadow: none !important;
   }
 
-  /* Header */
+  /* ---- PDF PAGE FLEX CONTAINERS ---- */
+  .pdf-page {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    min-height: 100% !important;
+  }
+
+  /* ---- HEADER BANNER ---- */
   .header-banner {
     animation: none !important;
     background: #0f172a !important;
     -webkit-print-color-adjust: exact !important;
+    padding: 1.25rem 1.5rem !important;
+    border-radius: 0.85rem !important;
+    margin-bottom: 1.25rem !important;
   }
 
   .header-banner::before {
     display: none;
   }
 
-  .header-banner::after {
-    animation: none !important;
-    -webkit-print-color-adjust: exact !important;
+  .header-banner h1 {
+    font-size: 1.6rem !important;
+    margin-top: 0.35rem !important;
+    line-height: 1.2 !important;
   }
 
-  /* Cards — ensure borders and backgrounds print */
+  .header-banner p {
+    font-size: 0.75rem !important;
+    margin-top: 0.25rem !important;
+  }
+
+  /* ---- HEADINGS & BADGES ---- */
+  h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .phase-badge {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .glow-divider {
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* ---- CARD PADDING RESTORATIONS ---- */
+  .bg-white.rounded-xl,
+  .bg-slate-900.rounded-xl {
+    padding: 1.125rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .bg-white.rounded-xl.p-5,
+  .bg-white.rounded-xl.p-6 {
+    padding: 1.125rem !important;
+  }
+
+  .p-4 {
+    padding: 0.875rem !important;
+  }
+
+  .p-3 {
+    padding: 0.75rem !important;
+  }
+
+  .p-2\.5,
+  .p-2 {
+    padding: 0.5rem !important;
+  }
+
+  /* ---- FONT SCALING ---- */
+  .text-4xl {
+    font-size: 2.25rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-3xl {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .text-2xl {
+    font-size: 1.35rem !important;
+  }
+
+  .text-xl {
+    font-size: 1.125rem !important;
+  }
+
+  .text-lg {
+    font-size: 1rem !important;
+  }
+
+  .text-base {
+    font-size: 0.875rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.75rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* ---- SPACING AND GAPS ---- */
+  .mt-8 {
+    margin-top: 1.25rem !important;
+  }
+
+  .mt-4 {
+    margin-top: 0.875rem !important;
+  }
+
+  .mt-3 {
+    margin-top: 0.625rem !important;
+  }
+
+  .mt-2 {
+    margin-top: 0.375rem !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 0.875rem !important;
+  }
+
+  .mb-3 {
+    margin-bottom: 0.625rem !important;
+  }
+
+  .gap-4 {
+    gap: 1rem !important;
+  }
+
+  .gap-3 {
+    gap: 0.75rem !important;
+  }
+
+  .gap-2 {
+    gap: 0.5rem !important;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+
+  /* ---- COMPONENT LAYOUT SIZING ---- */
+  .h-7 {
+    height: 1.6rem !important;
+    line-height: 1.6rem !important;
+    font-size: 0.75rem !important;
+    margin-top: 0.875rem !important;
+    margin-bottom: 0.875rem !important;
+  }
+
+  .swp-pulse {
+    animation: none !important;
+    padding: 1rem !important;
+    margin-bottom: 0.875rem !important;
+  }
+
+  .alert-pulse {
+    animation: none !important;
+    border-color: #f43f5e !important;
+    padding: 0.875rem !important;
+    margin-top: 0.875rem !important;
+  }
+
+  .border-t.border-slate-100 {
+    margin-top: 1rem !important;
+    padding-top: 0.875rem !important;
+  }
+
+  .border-t.border-slate-100 .p-3 {
+    padding: 0.625rem !important;
+  }
+
+  /* ---- BACKGROUND COLOR RETAINING ---- */
   .bg-white,
   .bg-slate-50,
   .bg-slate-900,
@@ -493,62 +649,62 @@ body {
   .bg-blue-50,
   .bg-amber-50,
   .bg-purple-50,
-  .bg-emerald-50 {
+  .bg-emerald-50,
+  .bg-rose-50,
+  .bg-rose-100,
+  .bg-rose-600,
+  .from-rose-50,
+  .to-pink-50,
+  .from-blue-50,
+  .to-indigo-50\/30,
+  .from-amber-50,
+  .to-orange-50\/30 {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 
-  /* Remove hover transforms */
-  .card-hover:hover,
-  .card-dark:hover {
-    transform: none !important;
-    box-shadow: none !important;
-  }
-
-  /* Page breaks */
+  /* ---- PAGE BREAK LOGIC ---- */
   .page-break {
-    page-break-before: always;
-    break-before: page;
+    page-break-before: always !important;
+    break-before: page !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  .page-break-after {
-    page-break-after: always;
-    break-after: page;
-  }
-
-  .no-break {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  /* Keep cards together */
-  .grid > div {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  /* Tables */
-  table {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
+  .no-break,
+  .grid > div,
+  table,
   tr {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
-  /* Allocation bars — ensure they print at correct widths */
-  .bar-animate {
-    animation: none !important;
+  /* ---- TABLES & SUMMARIES ---- */
+  table {
+    margin-top: 0.5rem !important;
   }
 
-  /* SWP pulse — stop in print */
-  .swp-pulse {
-    animation: none !important;
+  th,
+  td {
+    padding: 0.625rem 0.5rem !important;
+    font-size: 0.725rem !important;
   }
 
-  /* Shimmer — stop in print */
+  th {
+    background-color: #f1f5f9 !important;
+  }
+
+  .grid-cols-2 .card-hover,
+  .grid-cols-4 .card-hover {
+    padding: 0.875rem !important;
+  }
+
+  .number-highlight {
+    font-size: 1.5rem !important;
+  }
+
+  /* ---- SHIMMER & GRADIENTS ---- */
   .badge-shimmer::after {
     display: none;
   }
@@ -559,42 +715,14 @@ body {
     background: none !important;
   }
 
-  /* Ensure links are visible */
   a {
     text-decoration: underline;
   }
 
-  /* Compact spacing for print */
-  .space-y-6 > * + * {
-    margin-top: 0.75rem;
-  }
-
-  .space-y-4 > * + * {
-    margin-top: 0.5rem;
-  }
-
-  /* Footer on every page */
-  .print-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 8pt;
-    color: #94a3b8;
-    border-top: 1px solid #e2e8f0;
-    padding: 4mm 0;
-  }
-
-  /* Alert box border print fix */
-  .alert-pulse {
-    animation: none !important;
-    border-color: #f43f5e !important;
-  }
-
-  /* Phase section — ensure they stay together */
-  .phase-section {
-    page-break-inside: avoid;
-    break-inside: avoid;
+  /* ---- FOOTER ---- */
+  footer {
+    font-size: 7.5pt !important;
+    padding-top: 0.875rem !important;
+    margin-top: 1.25rem !important;
   }
 }
