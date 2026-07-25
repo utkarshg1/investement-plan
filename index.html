@@ -13,579 +13,281 @@
   </head>
   <body class="bg-slate-50 text-slate-800 p-4 md:p-6 lg:p-8 dot-pattern">
     <div class="pdf-container max-w-5xl mx-auto space-y-6">
-      <!-- ============================================
-             PAGE 1: HEADER + PHASE 1
-             ============================================ -->
-      <div class="pdf-page">
-        <!-- HEADER BANNER -->
-        <header
-          class="header-banner text-white rounded-2xl p-6 md:p-7 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4 slide-up fade-in"
-        >
-          <div>
-            <span
-              class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider badge-shimmer"
-            >
-              Comprehensive Strategic Roadmap
+      <!-- HEADER BANNER -->
+      <header
+        class="bg-slate-900 text-white rounded-xl p-5 md:p-6 shadow-md flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+      >
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="bg-indigo-500/30 text-indigo-300 text-xs font-bold px-3 py-1 rounded-full uppercase">
+              Strategic Roadmap
             </span>
-            <h1 class="text-2xl md:text-3xl font-extrabold mt-2 tracking-tight">Financial Execution Plan</h1>
-            <p class="text-slate-400 text-sm mt-1">Timeline: Jan 2027 – 2051+ | Core AMC Partner: HDFC Mutual Fund</p>
+            <span class="text-slate-400 text-xs">Timeline: Jan 2027 – 2051+ | AMC: HDFC Mutual Fund</span>
           </div>
-          <div class="bg-slate-800/80 p-3 rounded-xl border border-slate-700 md:text-right">
-            <span class="text-xs text-slate-400 block">Assumed Benchmarks</span>
-            <div class="flex flex-wrap gap-2 mt-1">
-              <span class="text-xs font-semibold text-emerald-400">Equity/BAF: 12-14% CAGR</span>
-              <span class="text-slate-600 hidden sm:inline">|</span>
-              <span class="text-xs font-semibold text-amber-400">Inflation: 6% p.a.</span>
-            </div>
-          </div>
-        </header>
-
-        <!-- ============================================
-             PAGE 1: PHASE 1 & MILESTONE PURCHASES
-             ============================================ -->
-        <div class="space-y-6 slide-up delay-1">
-          <div class="flex items-center space-x-3 border-b border-slate-200 pb-2 glow-divider">
-            <span
-              class="phase-badge bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md shadow-indigo-200"
-            >
-              1
-            </span>
-            <h2 class="text-xl md:text-2xl font-bold text-slate-900">Phase 1: Accumulation & Goal Funding</h2>
-            <span class="hidden sm:inline text-xs font-medium text-slate-400 ml-auto">Jan 2027 – Jan 2037</span>
-          </div>
-
-          <!-- SIP CASHFLOW STRATEGY CARDS -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Card 1: BAF Base SIP -->
-            <div
-              class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm relative overflow-hidden card-hover card-white slide-up delay-2 no-break"
-            >
-              <div
-                class="absolute top-0 right-0 bg-indigo-500 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg badge-shimmer"
-              >
-                Core Engine
-              </div>
-              <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">
-                Starts Jan 2027 (5 Years)
-              </span>
-              <h3 class="text-lg font-bold text-slate-800 mt-1">HDFC Balanced Advantage Fund</h3>
-              <div class="text-3xl font-black text-indigo-600 mt-2 number-highlight">
-                ₹8,000
-                <span class="text-sm font-medium text-slate-500">/ month</span>
-              </div>
-              <p class="text-xs text-slate-500 mt-3 leading-relaxed">
-                Primary wealth dynamic asset allocation vehicle to build liquidity for initial milestones.
-              </p>
-            </div>
-
-            <!-- Card 2: Post Auto Loan Boost -->
-            <div
-              class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm relative overflow-hidden card-hover card-white slide-up delay-3 no-break"
-            >
-              <div
-                class="absolute top-0 right-0 bg-emerald-500 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg badge-shimmer"
-              >
-                Loan Redirect
-              </div>
-              <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">
-                Starts Nov 2028 (Post Loan Payoff)
-              </span>
-              <h3 class="text-lg font-bold text-slate-800 mt-1">Auto Loan Completion Expansion</h3>
-              <div class="text-3xl font-black text-emerald-600 mt-2 number-highlight">
-                +₹15,000
-                <span class="text-sm font-medium text-slate-500">/ month</span>
-              </div>
-              <div class="mt-3 text-xs bg-slate-50 p-3 rounded-lg text-slate-600 border border-slate-100">
-                <strong class="text-slate-700">Step-up Rule:</strong>
-                +₹1,800 annual increase, capped at +₹25,000/mo additional contribution.
-              </div>
-            </div>
-          </div>
-
-          <!-- MILESTONES / PURCHASES CARDS -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Goal 1 Card -->
-            <div
-              class="bg-gradient-to-br from-blue-50 to-indigo-50/30 rounded-xl p-5 border border-blue-200 shadow-sm card-hover slide-up delay-4 no-break"
-            >
-              <div class="flex justify-between items-start">
-                <div>
-                  <span class="text-xs font-bold text-blue-600 uppercase tracking-wide">Year 5-6 (Jan 2032)</span>
-                  <h4 class="text-lg font-extrabold text-slate-900 mt-1">Trek Domane AL 5</h4>
-                </div>
-                <span class="milestone-tag bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md">
-                  Milestone 1
-                </span>
-              </div>
-
-              <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
-                <div class="bg-white/80 p-2.5 rounded-lg">
-                  <span class="text-slate-400 block">2026 Price</span>
-                  <span class="font-bold text-slate-700 text-sm">₹2,00,000</span>
-                </div>
-                <div class="bg-white/80 p-2.5 rounded-lg">
-                  <span class="text-slate-400 block">Target Inflated (6%)</span>
-                  <span class="font-extrabold text-blue-700 text-sm">₹2,67,645</span>
-                </div>
-              </div>
-              <p class="text-xs text-slate-600 mt-3 font-medium leading-relaxed">
-                ✓ Withdraw inflated cost from HDFC BAF. Keep total remaining surplus corpus intact to compound.
-              </p>
-            </div>
-
-            <!-- Goal 2 Card -->
-            <div
-              class="bg-gradient-to-br from-amber-50 to-orange-50/30 rounded-xl p-5 border border-amber-200 shadow-sm card-hover slide-up delay-5 no-break"
-            >
-              <div class="flex justify-between items-start">
-                <div>
-                  <span class="text-xs font-bold text-amber-600 uppercase tracking-wide">Year 10-13 (Jan 2037)</span>
-                  <h4 class="text-lg font-extrabold text-slate-900 mt-1">Triumph Bonneville Speedmaster</h4>
-                </div>
-                <span class="milestone-tag bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md">
-                  Milestone 2
-                </span>
-              </div>
-
-              <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
-                <div class="bg-white/80 p-2.5 rounded-lg">
-                  <span class="text-slate-400 block">2026 Price</span>
-                  <span class="font-bold text-slate-700 text-sm">₹20,00,000</span>
-                </div>
-                <div class="bg-white/80 p-2.5 rounded-lg">
-                  <span class="text-slate-400 block">Target Inflated (6%)</span>
-                  <span class="font-extrabold text-amber-700 text-sm">₹35,81,695</span>
-                </div>
-              </div>
-              <p class="text-xs text-slate-600 mt-3 font-medium leading-relaxed">
-                ✓ Fund directly via HDFC BAF surplus accumulation. Retain all leftover wealth in portfolio.
-              </p>
-            </div>
+          <h1 class="text-2xl md:text-3xl font-extrabold mt-2 tracking-tight">Master Financial Execution Plan</h1>
+        </div>
+        <div class="bg-slate-800/90 px-4 py-2 rounded-lg border border-slate-700 md:text-right">
+          <span class="text-xs text-slate-400 block font-medium">Assumed Benchmarks</span>
+          <div class="flex gap-3 text-xs font-bold mt-1">
+            <span class="text-emerald-400">Equity/BAF: 12-14%</span>
+            <span class="text-slate-600">|</span>
+            <span class="text-amber-400">Inflation: 6%</span>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div class="page-break"></div>
-
-      <!-- ============================================
-             PAGE 2: PHASE 2 & PHASE 3
-             ============================================ -->
-      <div class="pdf-page">
-        <!-- PHASE 2 -->
-        <div class="flex items-center space-x-3 border-b border-slate-200 pb-2 glow-divider">
-          <span
-            class="phase-badge phase-badge-emerald bg-emerald-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md shadow-emerald-200"
-          >
-            2
-          </span>
-          <h2 class="text-xl md:text-2xl font-bold text-slate-900">Phase 2: Aggressive Wealth Creation</h2>
-          <span class="hidden sm:inline text-xs font-medium text-slate-400 ml-auto">Next 10 Years</span>
-        </div>
-
-        <div class="bg-slate-900 text-white rounded-xl p-5 md:p-6 shadow-lg card-dark slide-up delay-2 no-break">
-          <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-2">
-            <div>
-              <span class="text-xs text-emerald-400 font-bold uppercase tracking-wider">
-                Post-Vehicle Phase (10-Year Horizon)
-              </span>
-              <h3 class="text-lg font-bold">Parallel Dual SIP Allocation Strategy</h3>
-            </div>
-            <span
-              class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold px-3 py-1.5 rounded-full badge-shimmer"
-            >
-              Total: ₹30,000 / month
-            </span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
-            <!-- Dual SIP 1 -->
-            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 card-hover">
-              <div class="text-xs text-slate-400 uppercase font-semibold tracking-wide">
-                Equity Growth Engine (73.3%)
-              </div>
-              <div class="text-xl font-extrabold text-emerald-400 mt-1 number-highlight">
-                ₹22,000
-                <span class="text-xs font-medium text-slate-500">/ mo</span>
-              </div>
-              <div class="text-sm font-semibold text-white mt-1">HDFC Small Cap Fund (Fixed)</div>
-              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                Maximizes long-term capital appreciation. Existing lump sum remains invested to multiply.
-              </p>
-            </div>
-
-            <!-- Dual SIP 2 -->
-            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700 card-hover">
-              <div class="text-xs text-slate-400 uppercase font-semibold tracking-wide">
-                Stability & Debt Buffer (26.7%)
-              </div>
-              <div class="text-xl font-extrabold text-blue-400 mt-1 number-highlight">
-                ₹8,000
-                <span class="text-xs font-medium text-slate-500">/ mo</span>
-              </div>
-              <div class="text-sm font-semibold text-white mt-1">HDFC Hybrid Debt Fund</div>
-              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
-                Provides steady, lower-volatility downside risk hedge across economic cycles.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- PHASE 3 -->
-        <div class="flex items-center space-x-3 border-b border-slate-200 pb-2 mt-8 glow-divider">
-          <span
-            class="phase-badge phase-badge-purple bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md shadow-purple-200"
-          >
-            3
-          </span>
-          <h2 class="text-xl md:text-2xl font-bold text-slate-900">Phase 3: STP & Capital Preservation</h2>
-          <span class="hidden sm:inline text-xs font-medium text-slate-400 ml-auto">5-Year Duration</span>
-        </div>
-
-        <div class="bg-white rounded-xl p-5 md:p-6 border border-slate-200 shadow-sm slide-up delay-3 no-break">
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 gap-2">
-            <div>
-              <span class="text-xs font-bold text-purple-600 uppercase tracking-wide">
-                Final Accumulation Phase (5-Year Duration)
-              </span>
-              <h3 class="text-base font-extrabold text-slate-800 mt-0.5">Corpus Consolidation & Asset Rebalancing</h3>
-            </div>
-            <span class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full badge-shimmer">
-              STP Phase
-            </span>
-          </div>
-
-          <!-- Visual Allocation Bar -->
-          <div
-            class="w-full bg-slate-100 h-7 rounded-full overflow-hidden flex font-bold text-[10px] text-white text-center leading-7 my-4 shadow-inner"
-          >
-            <div class="bg-purple-600 h-full bar-animate flex items-center justify-center" style="width: 80%">
-              80% Equity Savings
-            </div>
-            <div class="bg-amber-500 h-full bar-animate flex items-center justify-center" style="width: 15%">
-              15% Gold
-            </div>
-            <div class="bg-blue-500 h-full bar-animate" style="width: 5%"></div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs mt-3">
-            <div class="p-3 bg-purple-50 rounded-lg border border-purple-100 card-hover no-break">
-              <span class="font-bold text-purple-900 block text-sm">80% HDFC Equity Savings Fund</span>
-              <span class="text-purple-700 mt-1 block leading-relaxed">
-                Provides equity-hedged growth with minimal drawdowns.
-              </span>
-            </div>
-            <div class="p-3 bg-amber-50 rounded-lg border border-amber-100 card-hover no-break">
-              <span class="font-bold text-amber-900 block text-sm">15% HDFC Gold ETF</span>
-              <span class="text-amber-700 mt-1 block leading-relaxed">Macro economic & currency inflation hedge.</span>
-            </div>
-            <div class="p-3 bg-blue-50 rounded-lg border border-blue-100 card-hover no-break">
-              <span class="font-bold text-blue-900 block text-sm">5% HDFC Liquid Fund</span>
-              <span class="text-blue-700 mt-1 block leading-relaxed">
-                Immediate liquidity buffer for cash requirements.
-              </span>
-            </div>
-          </div>
-
-          <!-- External Portfolio Consolidation Card -->
-          <div
-            class="mt-4 p-3 bg-slate-50 rounded-lg border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs"
-          >
-            <div class="flex items-center space-x-2">
-              <span class="w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0"></span>
-              <span class="font-bold text-slate-700">Motilal Oswal Consolidation:</span>
-              <span class="text-slate-600">Transfer external stocks and MFs into Motilal Oswal Liquid Fund.</span>
-            </div>
-            <span class="font-semibold text-slate-500 whitespace-nowrap">Same Account</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-break"></div>
-
-      <!-- ============================================
-             PAGE 3: PHASE 4 — REDEMPTION SWP
-             ============================================ -->
-      <div class="pdf-page">
-        <!-- PHASE 4 -->
-        <div class="flex items-center space-x-3 border-b border-slate-200 pb-2 glow-divider">
-          <span
-            class="phase-badge phase-badge-rose bg-rose-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shadow-md shadow-rose-200"
-          >
-            4
-          </span>
-          <h2 class="text-xl md:text-2xl font-bold text-slate-900">Phase 4: SWP & Retirement Income</h2>
-          <span class="hidden sm:inline text-xs font-medium text-slate-400 ml-auto">Post-2051</span>
-        </div>
-
-        <div class="bg-white rounded-xl p-5 md:p-6 border border-slate-200 shadow-sm slide-up delay-2 no-break">
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
-            <div>
-              <span class="text-xs font-bold text-rose-600 uppercase tracking-wide">Retirement Income Drawdown</span>
-              <h3 class="text-base font-extrabold text-slate-800 mt-0.5">Systematic Withdrawal Plan (SWP)</h3>
-            </div>
-            <span class="bg-rose-100 text-rose-800 text-xs font-bold px-3 py-1 rounded-full badge-shimmer">
-              SWP Phase
-            </span>
-          </div>
-
-          <!-- SWP Hero Card -->
-          <div
-            class="bg-gradient-to-br from-rose-50 via-white to-pink-50 border border-rose-200 rounded-xl p-5 mb-4 swp-pulse"
-          >
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-              <div>
-                <span class="text-xs font-semibold text-rose-500 uppercase tracking-wider">Annual Withdrawal Rate</span>
-                <div class="text-4xl font-black text-rose-600 mt-1 number-highlight">4%</div>
-                <p class="text-xs text-slate-500 mt-1.5 max-w-md leading-relaxed">
-                  Of total HDFC Equity Savings Fund corpus, withdrawn annually and credited monthly to your bank
-                  account.
-                </p>
-              </div>
-              <div class="bg-white border border-rose-100 rounded-lg p-4 text-center shadow-sm min-w-[180px]">
-                <span class="text-xs text-slate-400 block">Monthly Credit Formula</span>
-                <div class="text-sm font-bold text-slate-800 mt-1.5 font-mono">Corpus × 4% ÷ 12</div>
-                <span class="text-[10px] text-slate-400 mt-1 block">Auto-redeemed monthly</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Allocation Bar — Retirement -->
-          <div
-            class="w-full bg-slate-100 h-7 rounded-full overflow-hidden flex font-bold text-[10px] text-white text-center leading-7 my-4 shadow-inner"
-          >
-            <div class="bg-rose-500 h-full bar-animate flex items-center justify-center" style="width: 80%">
-              80% SWP Source
-            </div>
-            <div class="bg-amber-500 h-full bar-animate flex items-center justify-center" style="width: 15%">
-              15% Reserved
-            </div>
-            <div class="bg-blue-500 h-full bar-animate" style="width: 5%"></div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs mt-3">
-            <div class="p-3 bg-rose-50 rounded-lg border border-rose-100 card-hover no-break">
-              <span class="font-bold text-rose-900 block text-sm">80% HDFC Equity Savings Fund</span>
-              <span class="text-rose-700 mt-1 block leading-relaxed">
-                Sole source for monthly SWP income. Continues to earn returns on remaining balance.
-              </span>
-              <div class="mt-2 flex items-center space-x-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
-                <span class="text-rose-600 font-semibold">Active SWP Source</span>
-              </div>
-            </div>
-            <div class="p-3 bg-amber-50 rounded-lg border border-amber-100 card-hover no-break">
-              <span class="font-bold text-amber-900 block text-sm">15% HDFC Gold ETF</span>
-              <span class="text-amber-700 mt-1 block leading-relaxed">
-                Reserved — No withdrawal except declared emergencies. Acts as long-term inflation shield.
-              </span>
-              <div class="mt-2 flex items-center space-x-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                <span class="text-amber-600 font-semibold">Locked — Do Not Touch</span>
-              </div>
-            </div>
-            <div class="p-3 bg-blue-50 rounded-lg border border-blue-100 card-hover no-break">
-              <span class="font-bold text-blue-900 block text-sm">5% HDFC Liquid Fund</span>
-              <span class="text-blue-700 mt-1 block leading-relaxed">
-                Emergency-only buffer. Accessible within 24 hours. Never withdrawn for regular income.
-              </span>
-              <div class="mt-2 flex items-center space-x-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
-                <span class="text-blue-600 font-semibold">Emergency Buffer Only</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Emergency Rule Card -->
-          <div class="mt-4 p-4 bg-rose-50/60 rounded-lg border-2 border-dashed border-rose-200 alert-pulse no-break">
-            <div class="flex items-start gap-3">
-              <div
-                class="bg-rose-100 text-rose-600 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm"
-              >
-                !
-              </div>
-              <div>
-                <span class="font-bold text-rose-900 text-sm">Hard Rule: No Withdrawal from Gold & Liquid</span>
-                <p class="text-xs text-rose-700 mt-1 leading-relaxed">
-                  The 15% Gold allocation and 5% Liquid buffer are
-                  <strong>strictly reserved</strong>
-                  . They must not be touched for regular income or discretionary spending under any circumstance — only
-                  declared emergencies qualify. This preserves the long-term safety net of the portfolio.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- SWP Tax Note -->
-          <div class="mt-3 p-3 bg-slate-50 rounded-lg border border-slate-200 text-xs no-break">
-            <div class="flex items-start gap-2">
-              <span class="text-slate-400 flex-shrink-0">ℹ</span>
-              <div>
-                <span class="font-bold text-slate-700">Tax Implication:</span>
-                <span class="text-slate-600">
-                  SWP from equity-oriented funds (HDFC Equity Savings) held &gt;1 year is subject to LTCG tax at 10% on
-                  gains exceeding ₹1.25 lakh per year. Plan withdrawals within the exemption limit where possible.
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- SWP Flow Diagram (compact, inline) -->
-          <div class="mt-4 pt-4 border-t border-slate-100">
-            <h3 class="text-xs font-bold text-slate-900 mb-3">SWP Income Flow — How It Works</h3>
-            <div class="flex flex-col md:flex-row items-stretch gap-2 text-[11px]">
-              <!-- Step 1 -->
-              <div class="flex-1 bg-purple-50 rounded-lg p-3 border border-purple-100 text-center">
-                <div
-                  class="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-[10px] mx-auto mb-1.5"
+      <!-- 2-COLUMN QUADRANT GRID FOR ALL 4 PHASES -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- LEFT COLUMN: PHASE 1 & PHASE 2 -->
+        <div class="space-y-6">
+          <!-- PHASE 1 -->
+          <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4 glow-divider">
+              <div class="flex items-center space-x-3">
+                <span
+                  class="phase-badge bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
                 >
                   1
-                </div>
-                <span class="font-bold text-purple-900 block">Corpus Parked</span>
-                <span class="text-purple-700 mt-0.5 block">80% in HDFC Equity Savings Fund</span>
+                </span>
+                <h2 class="text-lg font-bold text-slate-900">Phase 1: Accumulation & Goals</h2>
               </div>
-              <div class="hidden md:flex items-center text-slate-300 text-sm font-bold px-0.5">→</div>
-              <div class="md:hidden flex justify-center text-slate-300 text-sm font-bold py-0.5">↓</div>
-              <!-- Step 2 -->
-              <div class="flex-1 bg-rose-50 rounded-lg p-3 border border-rose-100 text-center">
-                <div
-                  class="bg-rose-600 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-[10px] mx-auto mb-1.5"
+              <span class="text-xs font-semibold text-slate-400">2027 – 2037</span>
+            </div>
+
+            <!-- Phase 1 Content: SIPs + Goals in 2x2 grid -->
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div class="bg-indigo-50/50 p-3 rounded-lg border border-indigo-100">
+                <div class="text-[10px] font-bold text-indigo-600 uppercase">Core SIP (Starts Jan 2027)</div>
+                <div class="font-extrabold text-slate-800 text-sm mt-1">HDFC Balanced Advantage</div>
+                <div class="text-sm font-black text-indigo-700 mt-1">₹8,000 / mo</div>
+              </div>
+
+              <div class="bg-emerald-50/50 p-3 rounded-lg border border-emerald-100">
+                <div class="text-[10px] font-bold text-emerald-600 uppercase">Auto Loan Boost (Nov 2028)</div>
+                <div class="font-extrabold text-slate-800 text-sm mt-1">Loan Payoff Re-direction</div>
+                <div class="text-sm font-black text-emerald-700 mt-1">
+                  +₹15,000 / mo
+                  <span class="text-[10px] font-normal text-slate-500">(+₹1.8k/yr step-up)</span>
+                </div>
+              </div>
+
+              <div class="bg-blue-50/50 p-3 rounded-lg border border-blue-100">
+                <div class="flex justify-between text-[10px] font-bold text-blue-600 uppercase">
+                  <span>Milestone 1</span>
+                  <span>Jan 2032</span>
+                </div>
+                <div class="font-extrabold text-slate-800 text-sm mt-1">Trek Domane AL 5</div>
+                <div class="text-xs text-slate-600 mt-1">
+                  Cost (6% Inflated):
+                  <strong class="text-blue-700">₹2.68 Lakh</strong>
+                </div>
+              </div>
+
+              <div class="bg-amber-50/50 p-3 rounded-lg border border-amber-100">
+                <div class="flex justify-between text-[10px] font-bold text-amber-600 uppercase">
+                  <span>Milestone 2</span>
+                  <span>Jan 2037</span>
+                </div>
+                <div class="font-extrabold text-slate-800 text-sm mt-1">Triumph Speedmaster</div>
+                <div class="text-xs text-slate-600 mt-1">
+                  Cost (6% Inflated):
+                  <strong class="text-amber-700">₹35.82 Lakh</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHASE 2 -->
+          <div class="bg-slate-900 text-white rounded-xl p-5 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+              <div class="flex items-center space-x-3">
+                <span
+                  class="phase-badge bg-emerald-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
                 >
                   2
-                </div>
-                <span class="font-bold text-rose-900 block">4% Annual SWP</span>
-                <span class="text-rose-700 mt-0.5 block">Calculated on prevailing corpus value</span>
+                </span>
+                <h2 class="text-lg font-bold text-white">Phase 2: Aggressive Wealth Creation</h2>
               </div>
-              <div class="hidden md:flex items-center text-slate-300 text-sm font-bold px-0.5">→</div>
-              <div class="md:hidden flex justify-center text-slate-300 text-sm font-bold py-0.5">↓</div>
-              <!-- Step 3 -->
-              <div class="flex-1 bg-emerald-50 rounded-lg p-3 border border-emerald-100 text-center">
-                <div
-                  class="bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-[10px] mx-auto mb-1.5"
+              <span class="text-xs font-semibold text-emerald-400">Post-2037 (10 Yrs)</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-slate-800 p-3 rounded-lg border border-slate-700">
+                <span class="text-[10px] font-bold text-emerald-400 uppercase block">Equity Engine (73.3%)</span>
+                <div class="text-sm font-bold text-white mt-1">HDFC Small Cap Fund</div>
+                <div class="text-sm font-black text-emerald-400 mt-1">₹22,000 / month</div>
+              </div>
+
+              <div class="bg-slate-800 p-3 rounded-lg border border-slate-700">
+                <span class="text-[10px] font-bold text-blue-400 uppercase block">Stability Buffer (26.7%)</span>
+                <div class="text-sm font-bold text-white mt-1">HDFC Hybrid Debt Fund</div>
+                <div class="text-sm font-black text-blue-400 mt-1">₹8,000 / month</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: PHASE 3 & PHASE 4 -->
+        <div class="space-y-6">
+          <!-- PHASE 3 -->
+          <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4 glow-divider">
+              <div class="flex items-center space-x-3">
+                <span
+                  class="phase-badge bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
                 >
                   3
-                </div>
-                <span class="font-bold text-emerald-900 block">Monthly Credit</span>
-                <span class="text-emerald-700 mt-0.5 block">SWP ÷ 12 → Bank account every month</span>
+                </span>
+                <h2 class="text-lg font-bold text-slate-900">Phase 3: STP & Capital Preservation</h2>
               </div>
-              <div class="hidden md:flex items-center text-slate-300 text-sm font-bold px-0.5">→</div>
-              <div class="md:hidden flex justify-center text-slate-300 text-sm font-bold py-0.5">↓</div>
-              <!-- Step 4 -->
-              <div class="flex-1 bg-blue-50 rounded-lg p-3 border border-blue-100 text-center">
-                <div
-                  class="bg-blue-600 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-[10px] mx-auto mb-1.5"
+              <span class="text-xs font-semibold text-purple-600">5-Year Duration</span>
+            </div>
+
+            <div
+              class="w-full bg-slate-100 h-7 rounded-full overflow-hidden flex font-bold text-[10px] text-white text-center leading-7 my-3"
+            >
+              <div class="bg-purple-600 h-full" style="width: 80%">80% Equity Savings</div>
+              <div class="bg-amber-500 h-full" style="width: 15%">15% Gold</div>
+              <div class="bg-blue-500 h-full" style="width: 5%"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-purple-50 rounded-lg border border-purple-100">
+                <strong class="text-purple-900 block text-xs">80% Equity Savings</strong>
+                <span class="text-slate-600 leading-tight block mt-1">Low drawdown growth</span>
+              </div>
+              <div class="p-3 bg-amber-50 rounded-lg border border-amber-100">
+                <strong class="text-amber-900 block text-xs">15% Gold ETF</strong>
+                <span class="text-slate-600 leading-tight block mt-1">Macro inflation hedge</span>
+              </div>
+              <div class="p-3 bg-blue-50 rounded-lg border border-blue-100">
+                <strong class="text-blue-900 block text-xs">5% Liquid Fund</strong>
+                <span class="text-slate-600 leading-tight block mt-1">24-hr cash buffer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHASE 4 -->
+          <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4 glow-divider">
+              <div class="flex items-center space-x-3">
+                <span
+                  class="phase-badge bg-rose-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm"
                 >
                   4
-                </div>
-                <span class="font-bold text-blue-900 block">Residual Growth</span>
-                <span class="text-blue-700 mt-0.5 block">Remaining corpus continues to earn returns</span>
+                </span>
+                <h2 class="text-lg font-bold text-slate-900">Phase 4: SWP & Retirement Income</h2>
               </div>
+              <span class="text-xs font-semibold text-rose-600">Post-2051</span>
+            </div>
+
+            <div
+              class="bg-rose-50/70 border border-rose-200 rounded-lg p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4"
+            >
+              <div>
+                <span class="text-[10px] font-bold text-rose-600 uppercase">SWP Rule</span>
+                <div class="text-base font-black text-rose-700 mt-1">4% Annual Withdrawal</div>
+                <div class="text-xs text-slate-600 mt-1">Redeemed monthly from Equity Savings Fund</div>
+              </div>
+              <div class="bg-white px-3 py-2 rounded-lg border border-rose-200 text-center">
+                <span class="text-[10px] text-slate-400 block font-medium">Formula</span>
+                <span class="text-xs font-bold text-slate-800 font-mono">Corpus × 4% ÷ 12</span>
+              </div>
+            </div>
+
+            <div class="p-3 bg-rose-100/50 border border-rose-300 rounded-lg text-xs text-rose-900">
+              <strong>Hard Rule:</strong>
+              15% Gold & 5% Liquid buffers are
+              <u>strictly locked</u>
+              for declared emergencies only.
             </div>
           </div>
         </div>
       </div>
 
-      <div class="page-break"></div>
+      <!-- MASTER TIMELINE MATRIX (FULL WIDTH) -->
+      <div class="bg-white rounded-xl p-5 border border-slate-200 shadow-sm">
+        <h3 class="text-sm font-bold text-slate-900 mb-3">Roadmap Master Execution Matrix</h3>
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 border-b border-slate-200 text-xs">
+              <th class="p-2.5 font-bold">Timeline</th>
+              <th class="p-2.5 font-bold">Primary Action / Fund</th>
+              <th class="p-2.5 font-bold">Monthly Contribution</th>
+              <th class="p-2.5 font-bold">Target / Milestone</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-xs">
+            <tr>
+              <td class="p-2.5 font-bold text-indigo-600">Jan 2027 – Oct 2028</td>
+              <td class="p-2.5">HDFC Balanced Advantage Fund</td>
+              <td class="p-2.5 font-semibold">₹8,000 / mo</td>
+              <td class="p-2.5">Phase 1 base compounding</td>
+            </tr>
+            <tr class="bg-emerald-50/30">
+              <td class="p-2.5 font-bold text-emerald-700">Nov 2028 Onwards</td>
+              <td class="p-2.5">HDFC BAF (+ Auto Loan Payoff)</td>
+              <td class="p-2.5 font-semibold">₹23,000 / mo (+step-up)</td>
+              <td class="p-2.5">Accelerated capital build</td>
+            </tr>
+            <tr>
+              <td class="p-2.5 font-bold text-blue-600">Jan 2032 (Year 5-6)</td>
+              <td class="p-2.5">HDFC BAF Withdrawal</td>
+              <td class="p-2.5 font-semibold">—</td>
+              <td class="p-2.5 font-bold text-blue-700">Trek Domane AL5 (₹2.68L)</td>
+            </tr>
+            <tr class="bg-amber-50/30">
+              <td class="p-2.5 font-bold text-amber-700">Jan 2037 (Year 10-13)</td>
+              <td class="p-2.5">HDFC BAF Withdrawal</td>
+              <td class="p-2.5 font-semibold">—</td>
+              <td class="p-2.5 font-bold text-amber-800">Triumph Speedmaster (₹35.8L)</td>
+            </tr>
+            <tr>
+              <td class="p-2.5 font-bold text-emerald-600">Post Year 10 (10 Yrs)</td>
+              <td class="p-2.5">HDFC Small Cap + Hybrid Debt</td>
+              <td class="p-2.5 font-semibold">₹22k (Small Cap) + ₹8k (Debt)</td>
+              <td class="p-2.5">Aggressive wealth creation</td>
+            </tr>
+            <tr class="bg-purple-50/30">
+              <td class="p-2.5 font-bold text-purple-700">Final Phase (5 Yrs)</td>
+              <td class="p-2.5">STP to Equity Savings / Gold / Liquid</td>
+              <td class="p-2.5 font-semibold">Systematic Transfer</td>
+              <td class="p-2.5">Corpus preservation</td>
+            </tr>
+            <tr class="bg-rose-50/30">
+              <td class="p-2.5 font-bold text-rose-700">Post-2051 (Retirement)</td>
+              <td class="p-2.5">SWP from Equity Savings Fund</td>
+              <td class="p-2.5 font-semibold text-rose-700">4% annual / Monthly credit</td>
+              <td class="p-2.5 font-bold text-rose-700">Retirement drawdown</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <!-- ============================================
-             PAGE 4: MASTER TIMELINE + SUMMARY
-             ============================================ -->
-      <div class="pdf-page">
-        <!-- TIMELINE MATRIX -->
-        <div class="bg-white rounded-xl p-5 md:p-6 border border-slate-200 shadow-sm mt-2 slide-up delay-1 no-break">
-          <h3 class="text-base font-bold text-slate-900 mb-4">Roadmap Master Timeline Matrix</h3>
-          <div class="overflow-x-auto table-scroll">
-            <table class="w-full text-xs text-left border-collapse min-w-[600px]">
-              <thead>
-                <tr class="bg-slate-100 text-slate-600 border-b border-slate-200">
-                  <th class="p-2.5 font-bold whitespace-nowrap">Timeline</th>
-                  <th class="p-2.5 font-bold">Primary Fund / Action</th>
-                  <th class="p-2.5 font-bold whitespace-nowrap">Monthly Contribution</th>
-                  <th class="p-2.5 font-bold">Key Target / Milestone</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-100 text-slate-700">
-                <tr class="table-row-hover">
-                  <td class="p-2.5 font-bold text-indigo-600 whitespace-nowrap">Jan 2027 – Oct 2028</td>
-                  <td class="p-2.5">HDFC Balanced Advantage Fund</td>
-                  <td class="p-2.5 font-semibold">₹8,000 / mo</td>
-                  <td class="p-2.5">Initiate Phase 1 base compounding</td>
-                </tr>
-                <tr class="bg-emerald-50/40 table-row-hover">
-                  <td class="p-2.5 font-bold text-emerald-700 whitespace-nowrap">Nov 2028 Onwards</td>
-                  <td class="p-2.5">HDFC BAF (+ Auto Loan Payoff)</td>
-                  <td class="p-2.5 font-semibold">₹23,000 / mo (+₹1.8k step-up)</td>
-                  <td class="p-2.5">Accelerated capital build (Max +₹25k)</td>
-                </tr>
-                <tr class="table-row-hover">
-                  <td class="p-2.5 font-bold text-blue-600 whitespace-nowrap">Jan 2032 (Year 5-6)</td>
-                  <td class="p-2.5">HDFC BAF Withdrawal</td>
-                  <td class="p-2.5 font-semibold">—</td>
-                  <td class="p-2.5 font-bold text-blue-700">Purchase Trek Domane AL5 (₹2.68L)</td>
-                </tr>
-                <tr class="bg-amber-50/40 table-row-hover">
-                  <td class="p-2.5 font-bold text-amber-700 whitespace-nowrap">Jan 2037 (Year 10-13)</td>
-                  <td class="p-2.5">HDFC BAF Withdrawal</td>
-                  <td class="p-2.5 font-semibold">—</td>
-                  <td class="p-2.5 font-bold text-amber-800">Purchase Triumph Speedmaster (₹35.8L)</td>
-                </tr>
-                <tr class="table-row-hover">
-                  <td class="p-2.5 font-bold text-emerald-600 whitespace-nowrap">Post Year 10 (10 Yrs)</td>
-                  <td class="p-2.5">HDFC Small Cap + Hybrid Debt</td>
-                  <td class="p-2.5 font-semibold">₹22k (Small Cap) + ₹8k (Debt)</td>
-                  <td class="p-2.5">Pure wealth multiplication phase</td>
-                </tr>
-                <tr class="bg-purple-50/40 table-row-hover">
-                  <td class="p-2.5 font-bold text-purple-700 whitespace-nowrap">Final Phase (5 Yrs)</td>
-                  <td class="p-2.5">STP to Equity Savings / Gold / Liquid</td>
-                  <td class="p-2.5 font-semibold">Systematic Transfer</td>
-                  <td class="p-2.5">Capital preservation & consolidation</td>
-                </tr>
-                <tr class="bg-rose-50/40 table-row-hover">
-                  <td class="p-2.5 font-bold text-rose-700 whitespace-nowrap">Post-2051 (Retirement)</td>
-                  <td class="p-2.5">SWP from HDFC Equity Savings Fund</td>
-                  <td class="p-2.5 font-semibold text-rose-700">4% annual / Monthly credit</td>
-                  <td class="p-2.5 font-bold text-rose-700">Retirement income drawdown — Gold & Liquid locked</td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- PLAN AT A GLANCE & FOOTER -->
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-white p-4 rounded-xl border border-slate-200 text-xs gap-3"
+      >
+        <div class="flex gap-6">
+          <div>
+            <strong class="text-indigo-600 text-base">4</strong>
+            <span class="text-slate-500 ml-1">Phases</span>
+          </div>
+          <div>
+            <strong class="text-emerald-600 text-base">24+</strong>
+            <span class="text-slate-500 ml-1">Years</span>
+          </div>
+          <div>
+            <strong class="text-amber-600 text-base">5</strong>
+            <span class="text-slate-500 ml-1">HDFC Funds</span>
+          </div>
+          <div>
+            <strong class="text-rose-600 text-base">4%</strong>
+            <span class="text-slate-500 ml-1">SWP Rate</span>
           </div>
         </div>
-
-        <!-- ============================================
-             SUMMARY STATISTICS
-             ============================================ -->
-        <div class="bg-white rounded-xl p-5 md:p-6 border border-slate-200 shadow-sm slide-up delay-2 no-break">
-          <h3 class="text-sm font-bold text-slate-900 mb-4">Plan At A Glance</h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
-            <div class="bg-indigo-50 rounded-lg p-3 border border-indigo-100 card-hover">
-              <span class="text-2xl font-black text-indigo-600 number-highlight">4</span>
-              <span class="text-xs text-slate-500 block mt-1 font-medium">Phases</span>
-            </div>
-            <div class="bg-emerald-50 rounded-lg p-3 border border-emerald-100 card-hover">
-              <span class="text-2xl font-black text-emerald-600 number-highlight">24+</span>
-              <span class="text-xs text-slate-500 block mt-1 font-medium">Year Horizon</span>
-            </div>
-            <div class="bg-amber-50 rounded-lg p-3 border border-amber-100 card-hover">
-              <span class="text-2xl font-black text-amber-600 number-highlight">5</span>
-              <span class="text-xs text-slate-500 block mt-1 font-medium">HDFC Funds</span>
-            </div>
-            <div class="bg-rose-50 rounded-lg p-3 border border-rose-100 card-hover">
-              <span class="text-2xl font-black text-rose-600 number-highlight">4%</span>
-              <span class="text-xs text-slate-500 block mt-1 font-medium">SWP Rate</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============================================
-             FOOTER
-             ============================================ -->
-        <footer class="text-center text-[11px] text-slate-400 py-3 border-t border-slate-200 space-y-1 fade-in">
-          <p>Personal Investment Roadmap &bull; Generated for Execution Planning</p>
-          <p>
-            Projections assume steady market returns and 6% inflation. Past performance is not indicative of future
-            results.
-          </p>
-          <p class="text-slate-300">Made with conviction &bull; Ready for deployment</p>
+        <footer class="text-slate-400 text-xs text-center sm:text-right">
+          Personal Investment Roadmap &bull; Generated for Execution Planning &bull; 6% Inflation Assumed
         </footer>
       </div>
     </div>

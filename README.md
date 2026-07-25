@@ -13,22 +13,20 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 
 ## Features
 
-- Subtle CSS animations (hover effects, fade-ins, gradient accents, shimmer badges) — zero JavaScript
+- Desktop-first spacious layout — readable typography, generous padding, clean visual hierarchy
+- 2-column quadrant grid — all 4 phases, timeline matrix, and summary stats
 - Fully responsive mobile layout with touch-friendly tap targets
-- Dense A4 print optimization — all 4 phases fit cleanly on 4 compact pages
-- Color-coded phase system with animated allocation bars
-- SWP income flow diagram (4-step, CSS-only)
-- Hard rule warning cards with pulsing borders
-- Tax implication notes
-- Master timeline matrix with hover highlights
-- Summary statistics dashboard
+- Single A4 page print — everything compresses to one sheet via isolated `@media print` engine
+- Color-coded phase system with allocation bars
+- Master execution matrix table
+- Zero JavaScript — pure HTML/CSS, GitHub Pages compatible
 
 ## Project Structure
 
 ```
 investement-plan/
 ├── index.html      # Main page (all 4 phases)
-├── styles.css      # Animations, mobile, print styles
+├── styles.css      # Desktop styles + isolated print engine
 ├── .prettierrc     # Prettier config (120 print width)
 ├── .nojekyll       # Disables Jekyll on GitHub Pages
 └── README.md
@@ -59,22 +57,21 @@ open index.html
 
 - **HTML5** — semantic structure
 - **Tailwind CSS** (CDN) — utility-first styling
-- **Custom CSS** — animations, print compaction, mobile optimizations
+- **Custom CSS** — desktop base styles + print compaction (isolated in `@media print`)
 - **Prettier** — consistent code formatting (`printWidth: 120`)
 - **Zero JavaScript** — pure HTML/CSS, GitHub Pages compatible
 
 ## Print to PDF
 
-Open `index.html` in your browser and use **Ctrl+P** / **Cmd+P**. The print stylesheet handles:
+Open `index.html` in your browser and use **Ctrl+P** / **Cmd+P`. The print stylesheet:
 
-- **Dense A4 layout** — compact padding (0.625rem), smaller fonts (9.5pt), tight margins (12mm × 10mm)
-- **Page breaks** between each phase for clean separation
-- **All animations disabled** — no hover effects, no gradients, no pulses
-- **Colors preserved** — `print-color-adjust: exact` on all backgrounds and badges
-- **Cards kept together** — `page-break-inside: avoid` prevents mid-card splits
-- **Allocation bars** — slimmer height (18px) with correct proportions
-- **Tables** — compact rows with reduced padding
-- **Phase headers** — smaller badges (22px) and tighter spacing
+- **Single A4 page** — all content fits on one sheet (2-column quadrant layout)
+- **Tight margins** — `@page { margin: 4mm 5mm }` to maximize printable area
+- **7.2pt body font** — micro typography scaling for dense information
+- **All animations disabled** — no hover effects, no transitions, no shadows
+- **Colors preserved** — `print-color-adjust: exact` on all backgrounds
+- **Break protection** — `break-inside: avoid` on cards prevents mid-card page splits
+- **Desktop unaffected** — all compaction rules are strictly inside `@media print`, zero impact on screen rendering
 
 ## Code Formatting
 

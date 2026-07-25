@@ -1,11 +1,5 @@
-/* ============================================
-   Master Wealth & Acquisition Roadmap
-   Custom Styles — Animations, Mobile, Print
-   ============================================ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap");
-
-/* ---- BASE ---- */
 body {
   font-family:
     "Inter",
@@ -14,406 +8,38 @@ body {
     "Segoe UI",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ---- ANIMATIONS ---- */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* ---- Base Screen Styles ---- */
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes pulseGlow {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.25);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(99, 102, 241, 0);
-  }
-}
-
-@keyframes softPulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.75;
-  }
-}
-
-@keyframes barGrow {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes countUp {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes borderGlow {
-  0%,
-  100% {
-    border-color: rgba(99, 102, 241, 0.4);
-  }
-  50% {
-    border-color: rgba(99, 102, 241, 0.8);
-  }
-}
-
-/* ---- FADE-IN UTILITY CLASSES ---- */
-.fade-in {
-  animation: fadeIn 0.6s ease-out both;
-}
-
-.slide-up {
-  animation: slideUp 0.6s ease-out both;
-}
-
-.slide-right {
-  animation: slideRight 0.5s ease-out both;
-}
-
-/* Staggered delays */
-.delay-1 {
-  animation-delay: 0.1s;
-}
-.delay-2 {
-  animation-delay: 0.2s;
-}
-.delay-3 {
-  animation-delay: 0.3s;
-}
-.delay-4 {
-  animation-delay: 0.4s;
-}
-.delay-5 {
-  animation-delay: 0.5s;
-}
-.delay-6 {
-  animation-delay: 0.6s;
-}
-.delay-7 {
-  animation-delay: 0.7s;
-}
-.delay-8 {
-  animation-delay: 0.8s;
-}
-
-/* ---- CARD HOVER EFFECTS ---- */
 .card-hover {
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
-
 .card-hover:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    0 12px 28px -6px rgba(0, 0, 0, 0.12),
-    0 4px 8px -2px rgba(0, 0, 0, 0.06);
-}
-
-/* White cards */
-.card-white:hover {
-  border-color: rgba(99, 102, 241, 0.3);
-}
-
-/* Dark cards */
-.card-dark {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.card-dark:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* ---- HEADER BANNER ---- */
-.header-banner {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
-  position: relative;
-  overflow: hidden;
-}
-
-.header-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 60%);
-  pointer-events: none;
-}
-
-.header-banner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 6px;
-  background: linear-gradient(180deg, #6366f1, #8b5cf6, #a78bfa);
-  background-size: 100% 300%;
-  animation: gradientShift 4s ease infinite;
-}
-
-/* ---- PHASE INDICATOR BADGES ---- */
-.phase-badge {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.phase-badge:hover {
-  transform: scale(1.12);
-  box-shadow: 0 0 14px rgba(99, 102, 241, 0.4);
-}
-
-.phase-badge-emerald:hover {
-  box-shadow: 0 0 14px rgba(16, 185, 129, 0.4);
-}
-
-.phase-badge-purple:hover {
-  box-shadow: 0 0 14px rgba(147, 51, 234, 0.4);
-}
-
-.phase-badge-amber:hover {
-  box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);
-}
-
-.phase-badge-rose:hover {
-  box-shadow: 0 0 14px rgba(244, 63, 94, 0.4);
-}
-
-/* ---- GRADIENT TEXT ---- */
-.gradient-text {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6, #a78bfa);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
-}
-
-.gradient-text-emerald {
-  background: linear-gradient(135deg, #059669, #10b981, #34d399);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ---- SWP AMOUNT PULSE ---- */
-.swp-pulse {
-  animation: pulseGlow 2.5s ease-in-out infinite;
-  border-radius: 12px;
-}
-
-/* ---- ALLOCATION BAR ANIMATION ---- */
-.bar-animate {
-  animation: barGrow 1.2s ease-out both;
-}
-
-.bar-animate:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.bar-animate:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.bar-animate:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-/* ---- TABLE ROW HOVER ---- */
-.table-row-hover {
-  transition: background-color 0.2s ease;
-}
-
-.table-row-hover:hover {
-  background-color: rgba(99, 102, 241, 0.04);
-}
-
-/* ---- BADGE SHIMMER ---- */
-.badge-shimmer {
-  position: relative;
-  overflow: hidden;
-}
-
-.badge-shimmer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-  animation: shimmer 3s ease-in-out infinite;
-}
-
-/* ---- DECORATIVE DOT PATTERN ---- */
-.dot-pattern {
-  background-image: radial-gradient(circle, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-
-/* ---- MILESTONE TAG ---- */
-.milestone-tag {
-  transition: transform 0.2s ease;
-}
-
-.milestone-tag:hover {
-  transform: scale(1.05);
-}
-
-/* ---- DIVIDER WITH GLOW ---- */
 .glow-divider {
   position: relative;
 }
-
 .glow-divider::after {
   content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
-  width: 60px;
+  width: 48px;
   height: 2px;
   background: linear-gradient(90deg, #6366f1, transparent);
   border-radius: 1px;
 }
 
-/* ---- EMERGENCY ALERT BOX ---- */
-.alert-pulse {
-  animation: borderGlow 3s ease-in-out infinite;
-}
-
-/* ---- NUMBER COUNTER HIGHLIGHT ---- */
-.number-highlight {
-  animation: countUp 0.5s ease-out both;
-  transition: transform 0.2s ease;
-}
-
-.number-highlight:hover {
-  transform: scale(1.03);
-}
-
-/* ---- MOBILE OPTIMIZATIONS ---- */
-@media (max-width: 640px) {
-  .mobile-compact {
-    padding: 1rem;
-  }
-
-  .mobile-full-width {
-    width: 100%;
-  }
-
-  .mobile-stack {
-    flex-direction: column;
-  }
-
-  .mobile-text-center {
-    text-align: center;
-  }
-
-  .mobile-p-3 {
-    padding: 0.75rem;
-  }
-
-  .mobile-gap-3 {
-    gap: 0.75rem;
-  }
-
-  /* Larger tap targets */
-  .tap-target {
-    min-height: 44px;
-    min-width: 44px;
-  }
-
-  /* Stack header banner */
-  .header-banner > div:last-child {
-    text-align: left !important;
-  }
-
-  /* Table horizontal scroll */
-  .table-scroll {
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* Reduce animation complexity on small screens */
-  .header-banner {
-    animation: none;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .tablet-p-6 {
-    padding: 1.5rem;
-  }
-}
-
-/* ---- REDUCTION: ACCESSIBILITY ---- */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -425,304 +51,248 @@ body {
 }
 
 /* ============================================
-   OPTIMIZED PRINT STYLES — Full A4 Page Fill
+   1-PAGE A4 PRINT ENGINE
+   All compaction isolated strictly inside @media print
    ============================================ */
 @media print {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-
-  body {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    background: #ffffff !important;
-    font-size: 9.5pt;
-    line-height: 1.45;
-    color: #1e293b !important;
-  }
-
   @page {
     size: A4 portrait;
-    margin: 12mm 10mm 12mm 10mm;
+    margin: 4mm 5mm;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    font-size: 7.2pt !important;
+    line-height: 1.15 !important;
+    color: #0f172a !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   .no-print {
     display: none !important;
   }
 
+  /* ---- Container ---- */
   .pdf-container {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    box-shadow: none !important;
   }
 
-  /* ---- PDF PAGE FLEX CONTAINERS ---- */
-  .pdf-page {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    min-height: 100% !important;
-  }
-
-  /* ---- HEADER BANNER ---- */
-  .header-banner {
-    animation: none !important;
-    background: #0f172a !important;
-    -webkit-print-color-adjust: exact !important;
-    padding: 1.25rem 1.5rem !important;
-    border-radius: 0.85rem !important;
-    margin-bottom: 1.25rem !important;
-  }
-
-  .header-banner::before {
-    display: none;
-  }
-
-  .header-banner h1 {
-    font-size: 1.6rem !important;
-    margin-top: 0.35rem !important;
-    line-height: 1.2 !important;
-  }
-
-  .header-banner p {
-    font-size: 0.75rem !important;
-    margin-top: 0.25rem !important;
-  }
-
-  /* ---- HEADINGS & BADGES ---- */
-  h2 {
-    font-size: 1.25rem !important;
-  }
-
-  .phase-badge {
-    width: 1.75rem !important;
-    height: 1.75rem !important;
-    font-size: 0.85rem !important;
-  }
-
-  .glow-divider {
-    padding-bottom: 0.5rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  /* ---- CARD PADDING RESTORATIONS ---- */
-  .bg-white.rounded-xl,
-  .bg-slate-900.rounded-xl {
-    padding: 1.125rem !important;
-    border-radius: 0.75rem !important;
-  }
-
-  .bg-white.rounded-xl.p-5,
-  .bg-white.rounded-xl.p-6 {
-    padding: 1.125rem !important;
-  }
-
-  .p-4 {
-    padding: 0.875rem !important;
-  }
-
-  .p-3 {
-    padding: 0.75rem !important;
-  }
-
-  .p-2\.5,
-  .p-2 {
-    padding: 0.5rem !important;
-  }
-
-  /* ---- FONT SCALING ---- */
-  .text-4xl {
-    font-size: 2.25rem !important;
-    line-height: 1.1 !important;
-  }
-
-  .text-3xl {
-    font-size: 1.75rem !important;
-    line-height: 1.2 !important;
-  }
-
-  .text-2xl {
-    font-size: 1.35rem !important;
-  }
-
-  .text-xl {
-    font-size: 1.125rem !important;
-  }
-
-  .text-lg {
-    font-size: 1rem !important;
-  }
-
-  .text-base {
-    font-size: 0.875rem !important;
-  }
-
-  .text-xs {
-    font-size: 0.75rem !important;
-    line-height: 1.35 !important;
-  }
-
-  /* ---- SPACING AND GAPS ---- */
-  .mt-8 {
-    margin-top: 1.25rem !important;
-  }
-
-  .mt-4 {
-    margin-top: 0.875rem !important;
-  }
-
-  .mt-3 {
-    margin-top: 0.625rem !important;
-  }
-
-  .mt-2 {
-    margin-top: 0.375rem !important;
-  }
-
-  .mb-4 {
-    margin-bottom: 0.875rem !important;
-  }
-
-  .mb-3 {
-    margin-bottom: 0.625rem !important;
-  }
-
-  .gap-4 {
-    gap: 1rem !important;
-  }
-
-  .gap-3 {
-    gap: 0.75rem !important;
-  }
-
-  .gap-2 {
-    gap: 0.5rem !important;
-  }
-
-  .space-y-6 > * + * {
-    margin-top: 1rem !important;
-  }
-
-  /* ---- COMPONENT LAYOUT SIZING ---- */
-  .h-7 {
-    height: 1.6rem !important;
-    line-height: 1.6rem !important;
-    font-size: 0.75rem !important;
-    margin-top: 0.875rem !important;
-    margin-bottom: 0.875rem !important;
-  }
-
-  .swp-pulse {
-    animation: none !important;
-    padding: 1rem !important;
-    margin-bottom: 0.875rem !important;
-  }
-
-  .alert-pulse {
-    animation: none !important;
-    border-color: #f43f5e !important;
-    padding: 0.875rem !important;
-    margin-top: 0.875rem !important;
-  }
-
-  .border-t.border-slate-100 {
-    margin-top: 1rem !important;
-    padding-top: 0.875rem !important;
-  }
-
-  .border-t.border-slate-100 .p-3 {
-    padding: 0.625rem !important;
-  }
-
-  /* ---- BACKGROUND COLOR RETAINING ---- */
-  .bg-white,
-  .bg-slate-50,
-  .bg-slate-900,
-  .bg-slate-800,
-  .bg-indigo-500,
-  .bg-emerald-500,
-  .bg-purple-600,
-  .bg-amber-500,
-  .bg-blue-500,
-  .bg-blue-50,
-  .bg-amber-50,
-  .bg-purple-50,
-  .bg-emerald-50,
-  .bg-rose-50,
-  .bg-rose-100,
-  .bg-rose-600,
-  .from-rose-50,
-  .to-pink-50,
-  .from-blue-50,
-  .to-indigo-50\/30,
-  .from-amber-50,
-  .to-orange-50\/30 {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-
-  /* ---- PAGE BREAK LOGIC ---- */
-  .page-break {
-    page-break-before: always !important;
-    break-before: page !important;
-    height: 0 !important;
-    margin: 0 !important;
+  /* ---- Body padding reset ---- */
+  body {
     padding: 0 !important;
   }
 
-  .no-break,
-  .grid > div,
-  table,
-  tr {
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
+  /* ---- Header compact ---- */
+  header {
+    padding: 0.35rem 0.5rem !important;
+    margin-bottom: 0.3rem !important;
+    border-radius: 0.35rem !important;
+    background: #0f172a !important;
+  }
+  header h1 {
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+  }
+  header p,
+  header span {
+    font-size: 0.55rem !important;
   }
 
-  /* ---- TABLES & SUMMARIES ---- */
+  /* ---- Section headings ---- */
+  h2 {
+    font-size: 0.7rem !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+  }
+  h3 {
+    font-size: 0.6rem !important;
+    line-height: 1.1 !important;
+  }
+
+  /* ---- Phase badges ---- */
+  .phase-badge {
+    width: 1.1rem !important;
+    height: 1.1rem !important;
+    font-size: 0.55rem !important;
+  }
+
+  /* ---- Glow divider ---- */
+  .glow-divider {
+    padding-bottom: 0.15rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+  .glow-divider::after {
+    display: none;
+  }
+
+  /* ---- Grid gaps ---- */
+  .grid {
+    gap: 0.25rem !important;
+  }
+
+  /* ---- Container vertical spacing ---- */
+  .space-y-6 > * + *,
+  .space-y-4 > * + *,
+  .space-y-2 > * + * {
+    margin-top: 0.25rem !important;
+  }
+
+  /* ---- Card padding compaction ---- */
+  .p-5,
+  .p-6 {
+    padding: 0.3rem 0.4rem !important;
+  }
+  .p-4 {
+    padding: 0.3rem !important;
+  }
+  .p-3 {
+    padding: 0.25rem !important;
+  }
+  .p-2\.5,
+  .p-2 {
+    padding: 0.2rem 0.3rem !important;
+  }
+  .p-1\.5,
+  .p-1 {
+    padding: 0.15rem 0.25rem !important;
+  }
+
+  /* ---- Border radius ---- */
+  .rounded-2xl,
+  .rounded-xl,
+  .rounded-lg {
+    border-radius: 0.3rem !important;
+  }
+  .rounded {
+    border-radius: 0.2rem !important;
+  }
+
+  /* ---- Typography scaling ---- */
+  .text-3xl,
+  .text-2xl {
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+  }
+  .text-xl {
+    font-size: 0.75rem !important;
+  }
+  .text-lg {
+    font-size: 0.65rem !important;
+  }
+  .text-sm {
+    font-size: 0.6rem !important;
+  }
+  .text-base {
+    font-size: 0.58rem !important;
+  }
+  .text-xs {
+    font-size: 0.55rem !important;
+    line-height: 1.1 !important;
+  }
+  .text-\[9px\],
+  .text-\[10px\],
+  .text-\[11px\] {
+    font-size: 0.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  /* ---- Margin overrides ---- */
+  .mt-8,
+  .mt-6,
+  .mt-4 {
+    margin-top: 0.2rem !important;
+  }
+  .mt-3,
+  .mt-2,
+  .mt-1,
+  .mt-0\.5 {
+    margin-top: 0.1rem !important;
+  }
+  .mb-6,
+  .mb-4,
+  .mb-3 {
+    margin-bottom: 0.2rem !important;
+  }
+  .mb-2,
+  .mb-1\.5,
+  .mb-1 {
+    margin-bottom: 0.1rem !important;
+  }
+  .my-1\.5 {
+    margin-top: 0.15rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+
+  /* ---- Progress bars ---- */
+  .h-7 {
+    height: 0.75rem !important;
+    line-height: 0.75rem !important;
+    font-size: 0.5rem !important;
+    margin-top: 0.15rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  .h-5 {
+    height: 0.65rem !important;
+    line-height: 0.65rem !important;
+    font-size: 0.45rem !important;
+  }
+  .h-8 {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  .w-8 {
+    width: 1rem !important;
+  }
+  .w-5 {
+    width: 1rem !important;
+  }
+  .h-5 {
+    height: 1rem !important;
+  }
+
+  /* ---- Table compact ---- */
   table {
-    margin-top: 0.5rem !important;
+    margin-top: 0.15rem !important;
   }
-
   th,
   td {
-    padding: 0.625rem 0.5rem !important;
-    font-size: 0.725rem !important;
+    padding: 0.12rem 0.25rem !important;
+    font-size: 0.5rem !important;
+    line-height: 1.1 !important;
   }
-
   th {
     background-color: #f1f5f9 !important;
   }
 
-  .grid-cols-2 .card-hover,
-  .grid-cols-4 .card-hover {
-    padding: 0.875rem !important;
+  /* ---- Break protection ---- */
+  .bg-white,
+  .bg-slate-900 {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 
-  .number-highlight {
-    font-size: 1.5rem !important;
-  }
-
-  /* ---- SHIMMER & GRADIENTS ---- */
-  .badge-shimmer::after {
-    display: none;
-  }
-
-  .gradient-text,
-  .gradient-text-emerald {
-    -webkit-text-fill-color: inherit !important;
-    background: none !important;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  /* ---- FOOTER ---- */
+  /* ---- Footer ---- */
   footer {
-    font-size: 7.5pt !important;
-    padding-top: 0.875rem !important;
-    margin-top: 1.25rem !important;
+    font-size: 0.5rem !important;
+    padding-top: 0.15rem !important;
+    margin-top: 0.2rem !important;
   }
 }
