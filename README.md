@@ -4,12 +4,12 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 
 ## Phases
 
-| Phase | Timeline            | Strategy                                                    |
-| ----- | ------------------- | ----------------------------------------------------------- |
-| **1** | Jan 2027 – Jan 2037 | Accumulation & Goal Funding (HDFC BAF)                      |
-| **2** | Next 10 years       | Aggressive Wealth Creation (Small Cap + Hybrid Debt)        |
-| **3** | 5-Year Duration     | STP & Capital Preservation (Equity Savings / Gold / Liquid) |
-| **4** | Post-2051           | SWP & Retirement Income (4% annual withdrawal)              |
+| Phase | Timeline            | Strategy                                                                                      |
+| ----- | ------------------- | --------------------------------------------------------------------------------------------- |
+| **1** | Jan 2027 – Jan 2037 | Accumulation & Goal Funding (HDFC BAF)                                                        |
+| **2** | Next 10 years       | Aggressive Wealth Creation (Small Cap + Hybrid Debt)                                          |
+| **3** | 5-Year Duration     | STP & Capital Preservation (HDFC Equity Savings Fund / HDFC Gold ETF Fund / HDFC Liquid Fund) |
+| **4** | Post-2051           | SWP & Retirement Income (4% annual withdrawal from HDFC Equity Savings Fund only)             |
 
 ## Features
 
