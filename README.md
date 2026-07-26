@@ -13,10 +13,10 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 
 ## Features
 
-- Desktop-first spacious layout — readable typography, generous padding, clean visual hierarchy
+- Desktop-first spacious layout — premium typography, generous padding, clean visual hierarchy
 - 2-column quadrant grid — all 4 phases, timeline matrix, and summary stats
 - Fully responsive mobile layout with touch-friendly tap targets
-- Single A4 page print — everything compresses to one sheet via isolated `@media print` engine
+- Print-optimized A4 layout — multi-page supported with `break-inside: avoid` on all cards and tables
 - Color-coded phase system with allocation bars
 - Master execution matrix table
 - Zero JavaScript — pure HTML/CSS, GitHub Pages compatible
@@ -57,7 +57,7 @@ open index.html
 
 - **HTML5** — semantic structure
 - **Tailwind CSS** (CDN) — utility-first styling
-- **Custom CSS** — desktop base styles + print compaction (isolated in `@media print`)
+- **Custom CSS** — desktop base styles + premium print engine with A4 optimization (isolated in `@media print`)
 - **Prettier** — consistent code formatting (`printWidth: 120`)
 - **Zero JavaScript** — pure HTML/CSS, GitHub Pages compatible
 
@@ -65,13 +65,15 @@ open index.html
 
 Open `index.html` in your browser and use **Ctrl+P** / **Cmd+P`. The print stylesheet:
 
-- **Single A4 page** — all content fits on one sheet (2-column quadrant layout)
-- **Tight margins** — `@page { margin: 4mm 5mm }` to maximize printable area
-- **7.2pt body font** — micro typography scaling for dense information
+- **A4 portrait layout** — `@page { size: A4 portrait; margin: 12mm 14mm }` for premium whitespace
+- **9pt body font** with 1.5 line-height — comfortable reading at print density
 - **All animations disabled** — no hover effects, no transitions, no shadows
 - **Colors preserved** — `print-color-adjust: exact` on all backgrounds
-- **Break protection** — `break-inside: avoid` on cards prevents mid-card page splits
-- **Desktop unaffected** — all compaction rules are strictly inside `@media print`, zero impact on screen rendering
+- **Break protection** — `break-inside: avoid` on cards, table rows, and headers
+- **Orphan/widow control** — `widows: 3; orphans: 3` for professional typesetting
+- **Phase badge spacing** — flexbox `gap-4` with `margin-right` fallback ensures 16px separation from heading text
+- **Consistent card padding** — 12pt/14pt on main cards, 8pt/10pt on inner sub-cards
+- **Desktop unaffected** — all print rules are strictly inside `@media print`, zero impact on screen rendering
 
 ## Code Formatting
 
