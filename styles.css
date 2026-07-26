@@ -113,11 +113,13 @@ body {
     gap: 10pt !important;
   }
 
+  .space-y-5,
   .space-y-7 {
     display: flex !important;
     flex-direction: column !important;
     gap: 12pt !important;
   }
+  .space-y-5 > * + *,
   .space-y-7 > * + * {
     margin-top: 0 !important;
   }

@@ -15,10 +15,10 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 
 - Desktop-first spacious layout — premium typography, generous padding, clean visual hierarchy
 - 2-column quadrant grid — all 4 phases, timeline matrix, and summary stats
-- Fully responsive mobile layout with touch-friendly tap targets
+- Mobile-optimized responsive design — card-based execution matrix, stacked phase headers, responsive typography, reduced padding/gaps, and 2×2 stats wrap
 - Print-optimized A4 layout — multi-page supported with `break-inside: avoid` on all cards and tables
 - Color-coded phase system with allocation bars
-- Master execution matrix table
+- Master execution matrix — desktop table + mobile card layout via `hidden md:block` / `md:hidden`
 - Zero JavaScript — pure HTML/CSS, GitHub Pages compatible
 
 ## Project Structure
