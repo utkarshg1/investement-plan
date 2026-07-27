@@ -30,7 +30,7 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 - Desktop-first spacious layout — premium typography, generous padding, clean visual hierarchy
 - 2-column quadrant grid — all 4 phases, timeline matrix, and summary stats
 - **Wealth projection card** — phase-wise corpus estimates with inflation-adjusted real values
-- Mobile-optimized responsive design — iPhone 12 Pro+ tested, `overflow-x: hidden` prevents horizontal scroll, footer stats wrap on narrow screens, cards clip at rounded corners
+- Mobile-optimized responsive design — iPhone 12 Pro+ tested, `overflow-x: hidden` prevents horizontal scroll, Phase 1 sub-cards stack in single column (`grid-cols-1`) on mobile with `sm:grid-cols-2` for tablet/desktop, footer stats wrap on narrow screens, cards clip at rounded corners
 - Print-optimized **single-page A4 layout** — header, 4 phases (2-column grid), execution matrix table, wealth projection card, and stats all fit on one page; ultra-compact wealth card with 4-col grid and 6.5–7pt fonts; `break-inside: avoid` on all cards and tables
 - Color-coded phase system with allocation bars
 - **Compact Phase 2 cards** — inline category badges, percentage allocations, and `/ mo` labels for reduced vertical height
