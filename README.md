@@ -7,7 +7,7 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 | Phase | Timeline                      | Strategy                                                                                      |
 | ----- | ----------------------------- | --------------------------------------------------------------------------------------------- |
 | **1** | Jan 2027 – Nov 2038 (~12 Yrs) | Accumulation & Goal Funding (HDFC BAF) — ₹8k SIP for 5 Yrs + ₹15k step-up SIP for 10 Yrs      |
-| **2** | Dec 2038 – Dec 2048 (10 Yrs)  | Aggressive Wealth Creation (HDFC Small Cap + HDFC Hybrid Debt)                                |
+| **2** | Dec 2038 – Dec 2048 (10 Yrs)  | Diversified Wealth Creation (HDFC Flexi Cap + Small Cap + Hybrid Debt)                        |
 | **3** | Jan 2049 – Jan 2054 (5 Yrs)   | STP & Capital Preservation (HDFC Equity Savings Fund / HDFC Gold ETF Fund / HDFC Liquid Fund) |
 | **4** | Post-2054                     | SWP & Retirement Income (4% annual withdrawal from HDFC Equity Savings Fund only)             |
 
@@ -16,14 +16,14 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 | Phase                      | Nominal Corpus  | Real Value (6% Inflation) |
 | -------------------------- | --------------- | ------------------------- |
 | Phase 1 End (Nov 2038)     | ₹21.75 Lakh     | ₹10.81 Lakh               |
-| Phase 2 End (Dec 2048)     | ₹1.38 Crore     | ₹38.19 Lakh               |
-| **Phase 3 End (Jan 2054)** | **₹2.11 Crore** | **₹43.72 Lakh**           |
-| Phase 4 SWP (Monthly)      | ₹54,680         | ₹11,339                   |
+| Phase 2 End (Dec 2048)     | ₹1.32 Crore     | ₹36.63 Lakh               |
+| **Phase 3 End (Jan 2054)** | **₹1.99 Crore** | **₹41.36 Lakh**           |
+| Phase 4 SWP (Monthly)      | ₹51,700         | ₹10,700                   |
 
 - **Total Invested:** ₹67.17 Lakh
 - **Total Withdrawn (Trek + Speedmaster):** ₹38.50 Lakh
-- **Gold + Liquid Buffer (locked):** ₹46.79 Lakh
-- **Assumed rates:** 12% Equity/BAF/Small Cap, 8% Debt/Equity Savings, 12% Gold ETF, 6% Liquid
+- **Gold + Liquid Buffer (locked):** ₹43.70 Lakh
+- **Assumed rates:** 12% Equity/Flexi Cap/Small Cap, 10% Hybrid Debt/Equity Savings, 12% Gold ETF, 6% Liquid
 
 ## Features
 
@@ -33,6 +33,9 @@ A comprehensive financial execution plan covering accumulation, growth, capital 
 - Mobile-optimized responsive design — iPhone 12 Pro+ tested, `overflow-x: hidden` prevents horizontal scroll, footer stats wrap on narrow screens, cards clip at rounded corners
 - Print-optimized **single-page A4 layout** — header, 4 phases (2-column grid), execution matrix table, wealth projection card, and stats all fit on one page; ultra-compact wealth card with 4-col grid and 6.5–7pt fonts; `break-inside: avoid` on all cards and tables
 - Color-coded phase system with allocation bars
+- **Compact Phase 2 cards** — inline category badges, percentage allocations, and `/ mo` labels for reduced vertical height
+- **Single-line fund titles** — `text-[11px] tracking-tight whitespace-nowrap text-ellipsis` prevents wrapping; "Fund" suffix trimmed
+- **Print-optimized Phase 2** — `print:` modifiers use pt units (`6.5pt`, `8.5pt`, `9pt`) to prevent text overflow in A4 columns; `tracking-normal` on category badges, `leading-none` on descriptions
 - Master execution matrix — desktop table + mobile card layout via `hidden md:block` / `md:hidden`
 - Zero JavaScript — pure HTML/CSS, GitHub Pages compatible
 

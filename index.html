@@ -140,32 +140,109 @@
           </div>
 
           <!-- PHASE 2 -->
-          <div class="bg-slate-900 text-white rounded-2xl p-4 md:p-6 shadow-sm">
-            <div
-              class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 border-b border-slate-800 pb-3 sm:pb-4 mb-4 sm:mb-5"
-            >
-              <div class="flex items-center gap-3 sm:gap-4">
+          <div class="bg-slate-900 text-white rounded-2xl p-4 print:p-2 shadow-sm">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-3 print:mb-1">
+              <div class="flex items-center gap-2">
                 <span
-                  class="phase-badge bg-emerald-500 text-white w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center font-bold text-sm"
+                  class="phase-badge bg-emerald-500 text-black h-6 w-6 print:h-3.5 print:w-3.5 rounded-full flex items-center justify-center font-bold text-[11px] print:text-[8pt]"
                 >
                   2
                 </span>
-                <h2 class="text-base sm:text-lg font-bold text-white">Phase 2: Aggressive Wealth Creation</h2>
+                <h3 class="text-sm print:text-[10pt] font-bold tracking-tight text-white">
+                  Phase 2: Aggressive Wealth Creation
+                </h3>
               </div>
-              <span class="text-xs font-semibold text-emerald-400 sm:text-right">Post-2038 (10 Yrs)</span>
+              <span class="text-[11px] print:text-[7.5pt] font-medium text-emerald-400 sm:text-right">
+                Post-2038 (10 Yrs)
+              </span>
             </div>
 
-            <div class="grid grid-cols-2 gap-2 sm:gap-3">
-              <div class="bg-slate-800 p-3 sm:p-4 rounded-xl border border-slate-700">
-                <span class="text-[10px] font-bold text-emerald-400 uppercase block">Equity Engine (73.3%)</span>
-                <div class="text-sm font-bold text-white mt-1">HDFC Small Cap Fund</div>
-                <div class="text-sm font-black text-emerald-400 mt-1">₹22,000 / month</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 print:gap-1 text-xs">
+              <div
+                class="bg-slate-800/80 px-2.5 py-3 print:px-1.5 print:py-1 rounded-xl border border-slate-700/50 flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center justify-between text-[9px] print:text-[6.5pt] font-semibold text-emerald-400 tracking-wider print:tracking-normal whitespace-nowrap"
+                  >
+                    <span>CORE EQUITY</span>
+                    <span>46.7%</span>
+                  </div>
+                  <h4
+                    class="mt-1 print:mt-0.5 text-[11px] print:text-[8.5pt] font-semibold text-slate-100 tracking-tight leading-snug whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    HDFC Flexi Cap
+                  </h4>
+                </div>
+                <div class="mt-2.5 print:mt-0.5">
+                  <div class="text-xs print:text-[9pt] font-bold text-emerald-400 whitespace-nowrap">
+                    ₹14,000
+                    <span class="text-[9px] print:text-[6.5pt] font-normal text-slate-400">/ mo</span>
+                  </div>
+                  <p
+                    class="text-[9px] print:text-[6.5pt] text-slate-500 mt-0.5 print:mt-0 leading-tight print:leading-none truncate"
+                  >
+                    Multi-cap growth engine
+                  </p>
+                </div>
               </div>
 
-              <div class="bg-slate-800 p-3 sm:p-4 rounded-xl border border-slate-700">
-                <span class="text-[10px] font-bold text-blue-400 uppercase block">Stability Buffer (26.7%)</span>
-                <div class="text-sm font-bold text-white mt-1">HDFC Hybrid Debt Fund</div>
-                <div class="text-sm font-black text-blue-400 mt-1">₹8,000 / month</div>
+              <div
+                class="bg-slate-800/80 px-2.5 py-3 print:px-1.5 print:py-1 rounded-xl border border-slate-700/50 flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center justify-between text-[9px] print:text-[6.5pt] font-semibold text-cyan-400 tracking-wider print:tracking-normal whitespace-nowrap"
+                  >
+                    <span>GROWTH ALPHA</span>
+                    <span>26.7%</span>
+                  </div>
+                  <h4
+                    class="mt-1 print:mt-0.5 text-[11px] print:text-[8.5pt] font-semibold text-slate-100 tracking-tight leading-snug whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    HDFC Small Cap
+                  </h4>
+                </div>
+                <div class="mt-2.5 print:mt-0.5">
+                  <div class="text-xs print:text-[9pt] font-bold text-cyan-400 whitespace-nowrap">
+                    ₹8,000
+                    <span class="text-[9px] print:text-[6.5pt] font-normal text-slate-400">/ mo</span>
+                  </div>
+                  <p
+                    class="text-[9px] print:text-[6.5pt] text-slate-500 mt-0.5 print:mt-0 leading-tight print:leading-none truncate"
+                  >
+                    High-conviction alpha
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-slate-800/80 px-2.5 py-3 print:px-1.5 print:py-1 rounded-xl border border-slate-700/50 flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="flex items-center justify-between text-[9px] print:text-[6.5pt] font-semibold text-indigo-400 tracking-wider print:tracking-normal whitespace-nowrap"
+                  >
+                    <span>STABILITY BUFFER</span>
+                    <span>26.7%</span>
+                  </div>
+                  <h4
+                    class="mt-1 print:mt-0.5 text-[11px] print:text-[8.5pt] font-semibold text-slate-100 tracking-tight leading-snug whitespace-nowrap overflow-hidden text-ellipsis"
+                  >
+                    HDFC Hybrid Debt
+                  </h4>
+                </div>
+                <div class="mt-2.5 print:mt-0.5">
+                  <div class="text-xs print:text-[9pt] font-bold text-indigo-400 whitespace-nowrap">
+                    ₹8,000
+                    <span class="text-[9px] print:text-[6.5pt] font-normal text-slate-400">/ mo</span>
+                  </div>
+                  <p
+                    class="text-[9px] print:text-[6.5pt] text-slate-500 mt-0.5 print:mt-0 leading-tight print:leading-none truncate"
+                  >
+                    Drawdown cushion
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -301,10 +378,10 @@
 
           <div class="rounded-xl border-l-4 border-emerald-400 bg-emerald-50/40 p-3">
             <div class="text-xs font-bold text-emerald-600">Dec 2038 – Dec 2048 (10 Yrs)</div>
-            <div class="text-sm font-semibold text-slate-800 mt-1">HDFC Small Cap + Hybrid Debt</div>
+            <div class="text-sm font-semibold text-slate-800 mt-1">HDFC Flexi Cap + Small Cap + Hybrid Debt</div>
             <div class="flex flex-col sm:flex-row sm:justify-between gap-1 mt-1.5">
-              <span class="text-xs text-slate-500">₹22k (Small Cap) + ₹8k (Debt)</span>
-              <span class="text-xs text-slate-600">Aggressive wealth creation</span>
+              <span class="text-xs text-slate-500">₹14k (Flexi Cap) + ₹8k (Small Cap) + ₹8k (Debt)</span>
+              <span class="text-xs text-slate-600">Diversified wealth creation</span>
             </div>
           </div>
 
@@ -373,9 +450,9 @@
               </tr>
               <tr>
                 <td class="p-2.5 font-bold text-emerald-600">Dec 2038 – Dec 2048</td>
-                <td class="p-2.5">HDFC Small Cap + Hybrid Debt</td>
-                <td class="p-2.5 font-semibold">₹22k (Small Cap) + ₹8k (Debt)</td>
-                <td class="p-2.5">Aggressive wealth creation (10 Yrs)</td>
+                <td class="p-2.5">HDFC Flexi Cap + Small Cap + Hybrid Debt</td>
+                <td class="p-2.5 font-semibold">₹14k (Flexi Cap) + ₹8k (Small Cap) + ₹8k (Debt)</td>
+                <td class="p-2.5">Diversified wealth creation (10 Yrs)</td>
               </tr>
               <tr class="bg-purple-50/30">
                 <td class="p-2.5 font-bold text-purple-700">Jan 2049 – Jan 2054</td>
@@ -413,22 +490,22 @@
           <div class="bg-slate-700/50 p-3 rounded-xl border border-slate-600">
             <div class="text-[10px] font-bold text-emerald-400 uppercase">Phase 2 End</div>
             <div class="text-[10px] text-slate-400 mt-0.5">Dec 2048 · ~22 Yrs</div>
-            <div class="text-base font-black text-white mt-1">₹1.38Cr</div>
-            <div class="text-[10px] text-slate-500">Real: ₹38.19L</div>
+            <div class="text-base font-black text-white mt-1">₹1.32Cr</div>
+            <div class="text-[10px] text-slate-500">Real: ₹36.63L</div>
           </div>
 
           <div class="bg-slate-700/50 p-3 rounded-xl border border-slate-600">
             <div class="text-[10px] font-bold text-purple-400 uppercase">Phase 3 End</div>
             <div class="text-[10px] text-slate-400 mt-0.5">Jan 2054 · ~27 Yrs</div>
-            <div class="text-base font-black text-emerald-400 mt-1">₹2.11Cr</div>
-            <div class="text-[10px] text-slate-500">Real: ₹43.72L</div>
+            <div class="text-base font-black text-emerald-400 mt-1">₹1.99Cr</div>
+            <div class="text-[10px] text-slate-500">Real: ₹41.36L</div>
           </div>
 
           <div class="bg-slate-700/50 p-3 rounded-xl border border-slate-600">
             <div class="text-[10px] font-bold text-rose-400 uppercase">Phase 4 SWP</div>
             <div class="text-[10px] text-slate-400 mt-0.5">Post-2054 · Retirement</div>
-            <div class="text-base font-black text-rose-400 mt-1">₹54.7K/mo</div>
-            <div class="text-[10px] text-slate-500">Real: ₹11.3K/mo</div>
+            <div class="text-base font-black text-rose-400 mt-1">₹51.7K/mo</div>
+            <div class="text-[10px] text-slate-500">Real: ₹10.7K/mo</div>
           </div>
         </div>
 
@@ -447,7 +524,7 @@
             </span>
             <span>
               <span class="text-slate-400">Gold+Liquid Buffer:</span>
-              <strong class="text-amber-400">₹46.79L</strong>
+              <strong class="text-amber-400">₹43.7L</strong>
             </span>
           </div>
           <span class="text-[10px] text-slate-500">
@@ -465,10 +542,10 @@
           <strong class="text-emerald-600">28+</strong>
           <span class="text-slate-500">Years</span>
           <span class="text-slate-300">&middot;</span>
-          <strong class="text-amber-600">5</strong>
+          <strong class="text-amber-600">6</strong>
           <span class="text-slate-500">HDFC Funds</span>
           <span class="text-slate-300">&middot;</span>
-          <strong class="text-purple-600">₹2.11Cr</strong>
+          <strong class="text-purple-600">₹1.99Cr</strong>
           <span class="text-slate-500">Target Corpus</span>
           <span class="text-slate-300">&middot;</span>
           <strong class="text-rose-600">4%</strong>
